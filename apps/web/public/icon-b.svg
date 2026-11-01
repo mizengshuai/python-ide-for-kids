@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- 变体B：极简 py（无眼睛无尾卷，纯几何粗笔画） -->
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5ad06e"/>
+      <stop offset="1" stop-color="#178a38"/>
+    </linearGradient>
+    <clipPath id="roundB">
+      <rect x="20" y="20" width="472" height="472" rx="110"/>
+    </clipPath>
+  </defs>
+
+  <rect x="20" y="20" width="472" height="472" rx="110" fill="url(#bgB)"/>
+
+  <g clip-path="url(#roundB)">
+    <!-- 单条大斜光带，强科技感 -->
+    <polygon points="512,-40 652,-40 252,532 112,532" fill="#ffffff" opacity="0.07"/>
+    <!-- 细网格点缀（左下角一点，克制） -->
+    <g fill="#ffffff" opacity="0.10">
+      <circle cx="90" cy="420" r="7"/>
+      <circle cx="130" cy="420" r="7"/>
+      <circle cx="90" cy="460" r="7"/>
+    </g>
+  </g>
+
+  <!-- py：无衬线粗笔画，y 尾自然下垂 -->
+  <g fill="none" stroke="#ffffff" stroke-width="58" stroke-linecap="round" stroke-linejoin="round" transform="translate(-30,-24)">
+    <path d="M 165 176 L 165 346"/>
+    <path d="M 165 264 C 250 228 304 268 298 306 C 292 346 240 370 165 344"/>
+    <path d="M 292 176 L 352 296"/>
+    <path d="M 420 176 L 340 348 L 340 400"/>
+  </g>
+</svg>

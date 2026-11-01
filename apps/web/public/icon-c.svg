@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- 变体C：终端光标 py_（深墨绿夜色底 + 白 py + 绿色光标块） -->
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123f26"/>
+      <stop offset="1" stop-color="#0a2b18"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4ecb63" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#4ecb63" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="roundC">
+      <rect x="20" y="20" width="472" height="472" rx="110"/>
+    </clipPath>
+  </defs>
+
+  <rect x="20" y="20" width="472" height="472" rx="110" fill="url(#bgC)"/>
+
+  <g clip-path="url(#roundC)">
+    <!-- 顶部绿色辉光 -->
+    <rect x="20" y="20" width="472" height="472" fill="url(#glow)"/>
+    <!-- 代码行点缀：左上两行小圆点像缩进的代码 -->
+    <g fill="#4ecb63" opacity="0.35">
+      <rect x="70" y="80" width="52" height="14" rx="7"/>
+      <rect x="134" y="80" width="30" height="14" rx="7"/>
+      <rect x="70" y="110" width="30" height="14" rx="7"/>
+    </g>
+  </g>
+
+  <!-- py 白字 -->
+  <g fill="none" stroke="#ffffff" stroke-width="56" stroke-linecap="round" stroke-linejoin="round" transform="translate(-19,-28)">
+    <path d="M 148 186 L 148 352"/>
+    <path d="M 148 270 C 232 234 284 272 278 310 C 272 348 220 372 148 346"/>
+    <path d="M 276 186 L 330 290"/>
+    <path d="M 396 186 L 322 330 L 322 368"/>
+  </g>
+
+  <!-- 终端光标块（绿色，跟在 y 后面，像等待输入） -->
+  <rect x="337" y="308" width="46" height="46" rx="10" fill="#4ecb63"/>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4ecb63"/>
+      <stop offset="1" stop-color="#1e8f3e"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="round">
+      <rect x="20" y="20" width="472" height="472" rx="110"/>
+    </clipPath>
+  </defs>
+
+  <!-- 底板 -->
+  <rect x="20" y="20" width="472" height="472" rx="110" fill="url(#bg)"/>
+
+  <g clip-path="url(#round)">
+    <!-- 科技感：右上斜向光带 -->
+    <polygon points="512,-40 612,-40 252,532 152,532" fill="#ffffff" opacity="0.06"/>
+    <polygon points="560,-40 640,-40 280,532 200,532" fill="#ffffff" opacity="0.05"/>
+    <!-- 顶部高光 -->
+    <rect x="20" y="20" width="472" height="472" fill="url(#sheen)"/>
+  </g>
+
+  <!-- py 字形（笔画式，圆头） -->
+  <g fill="none" stroke="#ffffff" stroke-width="56" stroke-linecap="round" stroke-linejoin="round">
+    <!-- p：竖笔 -->
+    <path d="M 175 190 L 175 348"/>
+    <!-- p：碗 -->
+    <path d="M 175 272 C 258 236 310 274 304 312 C 298 350 246 374 175 346"/>
+    <!-- y：左臂 -->
+    <path d="M 302 190 L 352 292"/>
+    <!-- y：右臂 + 蛇尾卷曲 -->
+    <path d="M 418 190 C 388 244 352 298 336 326 C 318 360 332 396 366 404 C 398 412 424 394 424 370 C 424 350 408 340 392 344"/>
+  </g>
+
+  <!-- 眼睛（p 的碗上，绿色瞳孔 + 白高光，让字形变成小蛇脸） -->
+  <circle cx="214" cy="298" r="11" fill="#17672f"/>
+  <circle cx="218" cy="294" r="3.5" fill="#ffffff"/>
+  <circle cx="258" cy="300" r="11" fill="#17672f"/>
+  <circle cx="262" cy="296" r="3.5" fill="#ffffff"/>
+</svg>

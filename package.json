@@ -1,0 +1,16 @@
+{
+  "name": "xiaomang",
+  "version": "0.1.0",
+  "private": true,
+  "description": "小蟒：面向中小学生的中文友好 Python 学习工具",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @xm/web",
+    "build": "npm run build -w @xm/web",
+    "test": "npm run test -w @xm/lexicon",
+    "sidecar:setup": "python -m venv sidecar/.venv && sidecar/.venv/Scripts/python -m pip install -r sidecar/requirements.txt"
+  }
+}

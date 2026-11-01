@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+apps/web/dist/
+apps/desktop/target/
+
+# Python runtime (not tracked, rebuilt by make-portable.bat)
+sidecar/py-runtime/
+sidecar/.venv/
+sidecar/py-runtime-dl/
+**/__pycache__/
+
+# Runtime state
+sidecar/xm-connection.json
+sidecar/xm-ui-port.txt
+sidecar/xm-serve.log
+sidecar/*.log
+sidecar/workspaces/
+sidecar/xiaomang-error.log
+
+# Release output
+release/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
