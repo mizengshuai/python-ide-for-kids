@@ -29,3 +29,6 @@ release/
 # OS
 Thumbs.db
 Desktop.ini
+*.sqlite
+design/_qa*.png
+design/preview-*.png
